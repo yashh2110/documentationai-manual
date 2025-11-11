@@ -1,6 +1,6 @@
 {
   "name": "Paperguide Documentation",
-  "initialRoute": "introduction",
+  "initialRoute": "paperguide/v1/en/introduction",
   "colors": {
     "light": {
       "brand": "#3B82F6"
@@ -10,70 +10,136 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "products": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
+        "product": "Paperguide",
+        "versions": [
           {
-            "group": "Getting Started",
-            "icon": "rocket",
-            "pages": [
+            "version": "v1",
+            "languages": [
               {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
-              }
-            ]
-          },
-          {
-            "group": "Core Concepts",
-            "icon": "lightbulb",
-            "pages": [
-              {
-                "title": "Spaces",
-                "path": "spaces",
-                "icon": "folder"
+                "language": "en",
+                "dropdowns": [
+                  {
+                    "dropdown": "Getting Started",
+                    "icon": "rocket",
+                    "pages": [
+                      {
+                        "title": "Introduction",
+                        "path": "paperguide/v1/en/introduction",
+                        "icon": "home"
+                      }
+                    ]
+                  }
+                ],
+                "tabs": [
+                  {
+                    "tab": "Documentation",
+                    "icon": "book",
+                    "dropdowns": [
+                      {
+                        "dropdown": "Core Features",
+                        "icon": "lightbulb",
+                        "dropdowns": [
+                          {
+                            "dropdown": "Content Management",
+                            "pages": [
+                              {
+                                "title": "Spaces",
+                                "path": "paperguide/v1/en/docs/spaces",
+                                "icon": "folder"
+                              },
+                              {
+                                "title": "Pages",
+                                "path": "paperguide/v1/en/docs/pages",
+                                "icon": "file-text"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "groups": [
+                      {
+                        "group": "Integration",
+                        "icon": "zap",
+                        "pages": [
+                          {
+                            "title": "Webhooks",
+                            "path": "paperguide/v1/en/docs/webhooks",
+                            "icon": "link"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Changelog",
+                    "icon": "clock",
+                    "pages": [
+                      {
+                        "title": "Release History",
+                        "path": "paperguide/v1/en/changelog",
+                        "icon": "history"
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "title": "Pages",
-                "path": "pages",
-                "icon": "file-text"
+                "language": "es",
+                "tabs": [
+                  {
+                    "tab": "Documentation",
+                    "icon": "book",
+                    "pages": [
+                      {
+                        "title": "Introducción",
+                        "path": "paperguide/v1/es/introduction",
+                        "icon": "home"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
           {
-            "group": "Advanced",
-            "icon": "zap",
-            "pages": [
+            "version": "v2",
+            "tabs": [
               {
-                "title": "Webhooks",
-                "path": "webhooks",
-                "icon": "link"
+                "tab": "Documentation",
+                "icon": "book",
+                "pages": [
+                  {
+                    "title": "Introduction",
+                    "path": "paperguide/v2/introduction",
+                    "icon": "home"
+                  }
+                ]
               }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
+        "product": "API",
+        "versions": [
           {
-            "group": "Endpoints",
-            "icon": "terminal",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Release History",
-            "path": "changelog",
-            "icon": "history"
+            "version": "v1",
+            "dropdowns": [
+              {
+                "dropdown": "Endpoints",
+                "icon": "terminal",
+                "pages": [
+                  {
+                    "title": "Webhooks API",
+                    "path": "api/v1/webhooks",
+                    "icon": "link"
+                  }
+                ]
+              }
+            ]
           }
         ]
       }
