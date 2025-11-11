@@ -95,22 +95,16 @@ Customize filters to limit events, such as only for specific pages.
 
 Use HTTPS for all webhook URLs to encrypt data. Validate payloads against expected schemas.
 
-`````mermaid
+````mermaid
 graph LR
     A[Event Occurs] --> B[Paperguide Server]
     B --> C[Send Payload]
     C --> D[Your Endpoint]
     D --> E[Process & Verify]
     E --> F[Action Taken]
-`````
+````
 
 Rotate secrets periodically. Limit IP access if your service supports it.
-
-| Event Type | Payload Size | Retry Attempts |
-|------------|--------------|----------------|
-| Page Update | <1 KB | 3 |
-| Space Create | <500 B | 5 |
-| Delete | <200 B | 1 |
 
 Integrate webhooks with CI/CD pipelines for automated doc updates. Monitor usage to avoid rate limits.
 
