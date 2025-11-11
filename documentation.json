@@ -19,9 +19,9 @@
             "languages": [
               {
                 "language": "English",
-                "dropdowns": [
+                "tabs": [
                   {
-                    "dropdown": "Quick Start",
+                    "tab": "Getting Started",
                     "icon": "rocket",
                     "pages": [
                       {
@@ -30,9 +30,7 @@
                         "icon": "home"
                       }
                     ]
-                  }
-                ],
-                "tabs": [
+                  },
                   {
                     "tab": "Documentation",
                     "icon": "book",
